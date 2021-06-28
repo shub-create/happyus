@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Happy Us</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    <script src="https://kit.fontawesome.com/e8ff83bdae.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logobar">
+        <a href="#" class="icon">
+            <img src="logo.png" class="imglogo"alt="" style="width:50px;height:50px;">
+        </a>
+        <a href="#" class="brand">
+            Happy Us
+        </a>
+        </div>
+        <a href="#aboutus" class='nav-link'>
+            ABOUT
+        </a>
+    </nav>
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+
+            if (this.hash !== "") {
+              event.preventDefault();
+              var hash = this.hash;
+    
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+           
+                window.location.hash = hash;
+              });
+            }
+          });
+        });
+        </script>
+
+
+
+    <div class="main-body">
+        <div class='quote'>
+         <h2>
+            <span class='span-2'>" </span>We know it's a lot, We know its hard. Just keep up the <span class='span-1'>hope </span>and We know<span class='span-1'> it will pass...</span> <span class='span-2'> "</span>
+         </h2>
+         <span class="download-para">We are always there for you ❤️</span>
+         <a href="happyus.apk" class="button3" download>
+                <span class='fab fa-android'></span>
+                
+                <span class='download'>Download for Android</span>
+         </a>
+
+        </div>
+        <img src="main.png" class="main-image" alt="" style="width:58rem;height:53rem;">
+    </div>
+
+    <div class="about" id="aboutus">
+        <div>
+            <img src="social.png" class="social-logo"alt="" style="width:38vw;height:40vw;">
+        </div>
+        <div>
+        <div class='about-head'>
+            About Us
+        </div>
+        <p>
+            HAPPY US is creating awareness about mental health and Spreading happiness. From staying indoors to ensure safety to recurrent upsurges in corona cases, losses both family and financial has buckled our head with plenty of stress and anxiety. Looking at overwhelming concerns, <br>Team Happy us felt a need to share people's plight.<br> <br> Application 'Happy us' enables you to share your emotions and thoughts on this social platform without revealing your identity. Do you feel the need to talk without being judged and also not get handful of lessons in return? Well, here is a solution. We provide you with volunteers who can be your listening partners. Also, on the application, you will find plentiful of authentic information on procedures dealing with seeking assistance for children who have lost parents in corona pandemic. you need to know one thing.<br> We, Happy us, are here for you.
+        </p>
+        </div>
+    </div>
+
+    <div class='contributor'>
+        <div class='contributor-head'>
+        Initiators
+        </div>
+        <div class="contributor-list">
+           <div class='contributor-heroes'>
+            <a href="https://www.linkedin.com/in/apoorav-jain-84ba9018b">
+            <div class='hero-pic one'></div>
+            <h2 class='hero-name'>
+                Apoorav Jain
+            </h2>
+            </a>
+           </div>
+           <div class='contributor-heroes'>
+            <a href="https://www.linkedin.com/in/shivam-verma-978b5718b">
+            <div class='hero-pic two'></div>
+            <h2 class='hero-name'>
+                Shivam Verma
+            </h2>
+            </a>
+           </div>
+           <div class='contributor-heroes'>
+            <a href="https://www.linkedin.com/in/shubham-mittal-bb694918b">
+            <div class='hero-pic three'></div>
+            <h2 class='hero-name'>
+                Shubham Mittal
+            </h2>
+            </a>
+           </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="social us">
+                 <h3>FOLLOW HAPPY US</h3>
+                 <div class="content">
+                 <a class="fb" href="https://www.facebook.com/happyy.uss"><span class="fab fa-facebook"></span></a>
+                 <a class="twtr" href="https://twitter.com/happyus404?s=08"><span class="fab fa-twitter"></span></a>
+                 <a class="insta" href=" https://www.instagram.com/invites/contact/?i=13gntfkm1yk8x&utm_content=lwwwkys"><span class="fab fa-instagram"></span></a>
+                 <a class="linkedin" href="https://www.linkedin.com/in/happy-us-4a63bb213"><span class="fab fa-linkedin-in"></span></a>
+                 <a class="phone" href="tel:+919650130959"><span class="fas fa-phone-alt"></span></a>
+                 </div>
+        </div>
+        <hr style="height: 0.1px;border: 0.5px solid rgba(255, 255, 255, 0.596);display: flex;justify-content: center;margin-right: 30%;margin-left: 30%;opacity: 0.15;">
+        <div class="copyright">
+            ©Happy Us 2021.All Rights Reserved.
+        </div>
+    
+</body>
+</html>
