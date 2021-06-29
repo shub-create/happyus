@@ -161,24 +161,31 @@ body {
   background-position: center;
   background-size: cover;
   display: flex;
-  background-color: #61a2ce23;
+
   overflow: hidden;
 }
-
+.about-body {
+  background-color: #61a2ce23;
+  border-radius: 2rem;
+  margin-right: 3%;
+  padding-right: 1.5%;
+  padding-left: 1.5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.507);
+}
 .about-head {
   text-align: center;
-  margin-right: 10%;
-  font-size: 5vw;
-  padding-top: 1.25rem;
-  font-family: "Kalam", cursive;
+  font-size: 4.5vw;
+  padding-top: 2rem;
+  font-family: sans-serif;
   color: #232a34;
 }
 
 .about p {
   text-align: center;
-  margin-right: 10%;
-  margin-top: 2%;
-  margin-bottom: 4%;
+  margin-top: 3%;
+  padding-bottom: 2%;
   font-size: 1.75vw;
   line-height: 2.5rem;
   font-family: Roboto;
@@ -189,6 +196,44 @@ body {
   margin-top: 10%;
 }
 
+.video-page {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding-top: 5%;
+  padding-bottom: 2.5%;
+}
+
+.video-para {
+  text-align: center;
+  font-size: 3.75vw;
+  font-family: sans-serif;
+  color: #232a34;
+}
+.iframe-container {
+  position: relative;
+  width: 47.5%;
+  height: 40%;
+  overflow: hidden;
+  padding-top: 30%;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.507);
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 .contributor {
   background: transparent;
   overflow: hidden;
@@ -196,10 +241,10 @@ body {
 
 .contributor-head {
   text-align: center;
-  font-size: 5vw;
-  font-family: "Kalam", cursive;
+  font-size: 4.5vw;
+  font-family: sans-serif;
   color: #232a34;
-  margin: 2rem 0rem 1rem 0;
+  margin: 2rem 0rem 3rem 0;
 }
 
 .contributor-list {
@@ -212,6 +257,7 @@ body {
   margin-left: 10%;
   margin-bottom: 5%;
   border-radius: 2rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.507);
 }
 .contributor-heroes {
   display: flex;
@@ -234,6 +280,7 @@ body {
   border-width: 0.3rem;
   height: 13rem;
   width: 13rem;
+  align-items: center;
 }
 .one {
   background-image: url("apoorav.jpeg");
@@ -249,16 +296,14 @@ body {
   background-image: url("shubham.jpeg");
   background-position: center;
   background-size: cover;
+  align-items: center;
 }
 
 .hero-name {
   margin-top: 1rem;
   font-family: "Lora", serif;
   font-size: 2vw;
-  margin-bottom: 2.5rem;
 }
-
-/* for future */
 
 .hero-desig {
   margin-top: 0.5rem;
@@ -397,7 +442,7 @@ body {
     text-align: center;
     margin-bottom: 5vh;
     font-size: auto;
-    line-height: 4vh;
+    line-height: 5.5vh;
   }
   .download-para {
     font-size: auto;
@@ -464,6 +509,10 @@ body {
     background-repeat: no-repeat;
     background-size: 70%;
   }
+  .about-body {
+    margin-right: 2%;
+    margin-left: 2%;
+  }
   .about-head {
     text-align: center;
     margin-right: 0%;
@@ -491,6 +540,10 @@ body {
     background-size: 120%;
     background-color: transparent;
   }
+  .about-body {
+    margin-right: 0;
+    margin-left: 0;
+  }
   .about p {
     margin-top: 1.5rem;
     font-size: 1.25rem;
@@ -507,6 +560,35 @@ body {
   }
 }
 
+/* video page */
+
+@media (max-width: 600px) {
+  .video-page {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 100%;
+  }
+
+  .video-para {
+    text-align: center;
+    font-size: 1.75rem;
+    font-family: sans-serif;
+    color: #232a34;
+    margin-top: 5%;
+    margin-bottom: 7.5%;
+  }
+  .iframe-container {
+    position: relative;
+    width: 80%;
+    height: 40%;
+    overflow: hidden;
+    padding-top: 50%;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.507);
+  }
+}
 /* contributor  */
 
 @media (max-width: 1150px) {
