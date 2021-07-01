@@ -535,6 +535,7 @@ body {
   .about p {
     font-size: 3vw;
     line-height: 4.5vh;
+    color: rgba(255, 255, 255, 0.85);
   }
 }
 
@@ -555,7 +556,7 @@ body {
     line-height: 1.7rem;
     margin-bottom: 7%;
     text-align: left;
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0.85);
     border-radius: 2rem;
   }
   .about-head {
