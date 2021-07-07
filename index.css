@@ -116,32 +116,47 @@ body {
 .span-2 {
   color: BLACK;
 }
+.buttons-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
 .button3 {
   display: flex;
   justify-content: space-between;
-  width: 20rem;
+  width: 12.75rem;
   height: 3rem;
-  padding-left: 1.5rem;
+  padding-left: 1.25rem;
   align-items: center;
-  border-radius: 2em;
+  border-radius: 0.3em;
   box-sizing: border-box;
   color: whitesmoke;
-  background-color: #232a34;
+  background-color: #000000;
   transition: all 0.2s;
   text-decoration: none;
   margin-bottom: 15vh;
+  margin-right: 5%;
+}
+.fa-google-play {
+  font-size: 27px;
+}
+.applefont {
+  font-size: 30px;
 }
 
 .download {
-  padding-right: 2rem;
   text-decoration: none;
   font-family: sans-serif;
+  font-size: 0.65rem;
+  margin-right: 10%;
 }
-
+.download-span {
+  font-size: 1.3rem;
+}
 .download-para {
   font-size: 2rem;
-  margin-bottom: 3vh;
+  margin-bottom: 3.5vh;
 }
 
 .button3:hover {
@@ -471,15 +486,33 @@ body {
     max-width: 20rem;
   }
   .button3 {
-    width: 15rem;
-    height: 2.5rem;
-    margin-bottom: 5rem;
+    width: 9rem;
+    height: 2.25rem;
+    margin-right: 0;
+    margin-bottom: 12vh;
+    padding-left: 1rem;
+  }
+  .gbutton {
+    margin-right: 2.75%;
+  }
+  .abutton {
+    margin-left: 2.75%;
+  }
+  .fa-google-play {
+    font-size: 17px;
+  }
+  .applefont {
+    font-size: 21px;
   }
   .download {
-    font-size: 1rem;
+    font-size: 0.5rem;
+  }
+  .download-span {
+    font-size: 0.9rem;
   }
   .download-para {
     font-size: 1.3rem;
+    margin-bottom: 3.6vh;
   }
   .quote h2 {
     margin-left: 5%;
@@ -660,7 +693,7 @@ body {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
   .contributor-head {
     font-size: 2rem;
     margin-bottom: 0rem;
@@ -681,13 +714,14 @@ body {
     margin-bottom: 2rem;
   }
   .one {
-    margin-top: 1.5rem;
+    margin-top: 1.4rem;
   }
   .two {
     margin-top: 0rem;
   }
   .three {
     margin-top: 0rem;
+    margin-left: 4%;
   }
   .hero-pic {
     height: 10rem;
@@ -698,7 +732,7 @@ body {
   }
   .hero-desig {
     font-size: 6.5vw;
-    margin-bottom: 12%;
+    margin-bottom: 11.6%;
   }
 }
 
