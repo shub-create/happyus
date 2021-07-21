@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*  navbar */
+
+body {
+  background-image: url("images/back.jpg");
+  background-attachment: fixed;
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: 100;
+  font-size: 1.4rem;
+}
+
+.navbar {
+  min-height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+}
+
+.icon {
+  text-decoration: none;
+}
+
+.imglogo {
+  align-items: center;
+  margin-right: 0.75rem;
+  margin-top: 5px;
+}
+.brand {
+  font-size: 1.75rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  align-items: center;
+  font-family: "Delius Unicase", cursive;
+  color: #fec107;
+  text-shadow: 0px 1px 1px rgb(0, 0, 0);
+}
+.logobar {
+  margin-left: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link {
+  color: #070707;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10rem;
+  font-family: "Delius Unicase", cursive;
+  cursor: pointer;
+  position: relative;
+  z-index: 1000;
+  font-size: 1.5rem;
+}
+
+.nav-link:hover {
+  color: #50d890;
+}
+
+/* footer */
+
+.footer {
+  position: relative;
+  bottom: 0px;
+  color: white;
+  width: 100%;
+  background-color: #232a34;
+  display: flex;
+  overflow: hidden;
+  letter-spacing: 3px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.social {
+  margin-top: 4.25vh;
+  margin-bottom: 4vh;
+  text-align: center;
+  font-family: "Delius Unicase", cursive;
+  font-size: 23px;
+  color: rgba(255, 255, 255, 0.842);
+}
+
+.content {
+  font-size: 30px;
+  margin-top: 27px;
+  padding-bottom: 4px;
+  overflow-y: hidden;
+}
+.content > a {
+  color: #50d890;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 50px;
+  opacity: 0.75;
+}
+
+.copyright {
+  color: rgba(255, 255, 255, 0.774);
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+  font-family: "Oxygen", sans-serif;
+  font-size: 12.25px;
+  padding-top: 11px;
+}
+.content > .fb :hover {
+  color: #1877f2;
+  opacity: 1;
+}
+.content > .linkedin :hover {
+  color: #00acee;
+  opacity: 1;
+}
+.content > .twtr :hover {
+  color: #00acee;
+  opacity: 1;
+}
+
+.content > .phone :hover {
+  color: #deee00;
+  opacity: 1;
+}
+.content > .insta :hover {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  opacity: 1;
+}
+
+/*  responsive */
+
+/*  navbar */
+
+@media (max-width: 900px) {
+  .logobar {
+    margin-right: auto;
+    margin-left: 1em;
+  }
+  .nav-link {
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+  }
+  .brand {
+    font-size: 1.2rem;
+  }
+  .imglogo {
+    margin-right: 0.5rem;
+    width: 40px;
+    height: 40px;
+  }
+  .logobar {
+    margin-left: 0.75rem;
+  }
+  .nav-link {
+    font-size: 1rem;
+    margin-right: 1.5rem;
+  }
+}
+
+/*  footer */
+
+@media (max-width: 550px) {
+  .social {
+    font-size: 3.5vw;
+    margin-bottom: 2vh;
+    margin-top: 4vh;
+  }
+  .content {
+    font-size: 5.5vw;
+  }
+  .content > a {
+    padding-left: 10px;
+    padding-right: 10px;
+    opacity: 0.75;
+  }
+  .copyright {
+    font-size: 2.25vw;
+  }
+}
