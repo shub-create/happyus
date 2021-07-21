@@ -1,0 +1,98 @@
+ {% extends 'home/layout.html' %}
+  {% load static %}
+  {% block head %}
+  <link rel='stylesheet' href="{% static 'home/index.css' %}">
+  {% endblock %}
+  {% block body %}
+
+    <div class="main-body">
+        <div class='quote'>
+         <h2>
+            <span class='span-2'>" </span>We know it's a lot, We know its hard. Just keep up the <span class='span-1'>hope </span>and We know<span class='span-1'> it will pass...</span> <span class='span-2'> "</span>
+         </h2>
+         <span class="download-para">We are always there for you ❤️</span>
+         <div class="buttons-list">
+         <a href="https://play.google.com/store/apps/details?id=com.happy_us" class="button3 gbutton">
+                <span class='fab fa-google-play'></span>
+                
+                <span class='download'>GET IT ON <br> <span class='download-span'>Google Play</span> </span>
+         </a>
+         <a href="https://apps.apple.com/in/app/happy-us/id1574500054" class="button3 abutton">
+            <span class='fab fa-apple applefont'></span>
+            
+            <span class='download' style='margin-right: 20%;'>GET IT ON <br> <span class='download-span'>App Store</span> </span>
+         </a>
+        </div>
+
+        </div>
+        <img src="{% static 'home/images/main.png' %}" class="main-image" alt="" style="width:58rem;height:53rem;">
+    </div>
+
+    <div class="about" id="aboutus">
+        <div>
+            <img src="{% static 'home/images/social.png' %}" class="social-logo"alt="" style="width:38vw;height:40vw;">
+        </div>
+        <div class="about-body">
+        <div class='about-head'>
+            ABOUT<span style='color:#50d890'>  US </span>
+        </div>
+        <p>
+            HAPPY US is creating awareness about mental health and Spreading happiness. From staying indoors to ensure safety to recurrent upsurges in corona cases, losses both family and financial has buckled our head with plenty of stress and anxiety. Looking at overwhelming concerns, <br>Team Happy us felt a need to share people's plight.<br> <br> Application 'Happy us' enables you to share your emotions and thoughts on this social platform without revealing your identity. Do you feel the need to talk without being judged and also not get handful of lessons in return? Well, here is a solution. We provide you with volunteers who can be your listening partners. Also, on the application, you will find plentiful of authentic information on procedures dealing with seeking assistance for children who have lost parents in corona pandemic. You need to know one thing. We, Happy us, are here for you.
+        </p>
+        </div>
+    </div>
+
+    <div class='video-page'>
+        <div class='video-para'>
+             A simple intro of
+            our Application
+        </div>
+        <div class='iframe-container'>
+        <iframe class='responsive-iframe' src="https://www.youtube-nocookie.com/embed/zJ-6eQ1nosU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class='contributor'>
+        <div class='contributor-head'>
+        MEET THE <span style='color:#50d890'>TEAM</span>
+        </div>
+        <div class="contributor-list">
+          <div class='contib'>
+            <div class='contributor-heroes'>
+                <a href="https://www.linkedin.com/in/apoorav-jain-84ba9018b">
+                <div class='hero-pic one'></div>
+                <h2 class='hero-name'>
+                    Apoorav Jain
+                </h2>
+                <p class='hero-desig'>
+                Founder
+                </p>
+                </a>
+            </div>
+            <div class='contributor-heroes'>
+                <a href="https://www.linkedin.com/in/shivam-verma-978b5718b">
+                <div class='hero-pic two'></div>
+                <h2 class='hero-name'>
+                    Shivam Verma
+                </h2>
+                <p class='hero-desig'>
+                    Co-Founder
+                </p>
+                </a>
+            </div>
+            <div class='contributor-heroes'>
+                <a href="https://www.linkedin.com/in/shubham-mittal-bb694918b">
+                <div class='hero-pic three'></div>
+                <h2 class='hero-name'>
+                    Shubham Mittal
+                </h2>
+                <p class='hero-desig'>
+                    Tech-Head
+                </p>
+                </a>
+            </div>
+            </div>
+         </div>
+    </div>
+    
+    {% endblock %}

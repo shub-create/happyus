@@ -1,0 +1,48 @@
+{% extends 'home/layout.html' %}
+  {% load static %}
+  {% block title %}
+    <title>Contact Us</title>
+    {% endblock %}
+       {% block head %}
+        <link rel='stylesheet' type='text/css' media='screen' href="{% static 'home/contact.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+        {% endblock %}
+
+        {% block nav %}
+        <a href="{% url 'index' %}" class='nav-link'>
+          Home
+         </a>
+        {% endblock %}
+
+
+        {% block body %}
+       <div class='contact'>
+           <div class='img-container'>
+               <h1>
+                   Get in <span style='color:#50d890'> Touch </span>
+               </h1>
+               <p>
+                   Feel free to connect us on your queries and we will get back to you as soon as possible.
+               </p>
+               <img class="img-div" src="{% static 'home/images/contact.png' %}" height=75% width=80% style='background-size: auto; margin-top:1%'>
+           </div>
+           <div class='contactForm'>
+               <div class="form-container">
+                   <p>
+                       Send us a Message
+                   </p>
+                   <form method='POST' action="{% url 'contact' %}" >
+                    {% csrf_token %}
+                    <div class="form-inner">
+                        <input type="text" placeholder="Name" name='name' required/>
+                        <input type="email" placeholder="Email" name='email' required/>
+                        <input type="number" placeholder="Mobile" name='phone' required/>
+                        <textarea placeholder="Message..." rows="4" name='content' required></textarea>
+                        <button type="submit" value='Submit' >Submit</button>
+                   </div>  
+                   </form>
+               </div>
+           </div>
+       </div>
+       {% endblock %}

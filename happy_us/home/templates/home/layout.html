@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    {% block title %}
+    <title>Happy Us</title>
+    {% endblock %}
+   
+    {% load static %}
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8GZXZRLSN1"></script>
+    <script src="https://kit.fontawesome.com/e8ff83bdae.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="{% static 'home/images/favicon.ico' %}" type="image/x-icon" />
+    <link rel='stylesheet' href="{% static 'home/layout.css' %}">
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logobar">
+        <a href="javascript:window.location.href=window.location.href" class="icon">
+            <img src="{% static 'home/images/logo.png' %}" class="imglogo"alt="" style="width:50px;height:50px;">
+        </a>
+        <a href="javascript:window.location.href=window.location.href" class="brand">
+            Happy Us
+        </a>
+        </div>
+        {% block nav %}
+        <a href="{% url 'contact' %}" class='nav-link'>
+          Contact
+         </a>
+        {% endblock %}
+    </nav>
+
+    {% block body %}
+    {% endblock %}
+
+    <div class="footer">
+        <div class="social us">
+                 <h3>FOLLOW HAPPY US</h3>
+                 <div class="content">
+                 <a class="fb" href="https://www.facebook.com/happyy.uss"><span class="fab fa-facebook"></span></a>
+                 <a class="twtr" href="https://twitter.com/happyus404?s=08"><span class="fab fa-twitter"></span></a>
+                 <a class="insta" href=" https://www.instagram.com/invites/contact/?i=13gntfkm1yk8x&utm_content=lwwwkys"><span class="fab fa-instagram"></span></a>
+                 <a class="linkedin" href="https://www.linkedin.com/in/happy-us-4a63bb213"><span class="fab fa-linkedin-in"></span></a>
+                 <a class="phone" href="tel:+919650130959"><span class="fas fa-phone-alt"></span></a>
+                 </div>
+        </div>
+        <hr style="height: 0.1px;border: 0.5px solid rgba(255, 255, 255, 0.596);display: flex;justify-content: center;margin-right: 30%;margin-left: 30%;opacity: 0.15;">
+        <div class="copyright">
+            ©Happy Us 2021.All Rights Reserved.
+    </div>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-8GZXZRLSN1');
+    </script>
+
+
+</body>
+</html>
+
+
+    
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+
+            if (this.hash !== "") {
+              event.preventDefault();
+              var hash = this.hash;
+    
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+           
+                window.location.hash = hash;
+              });
+            }
+          });
+        });
+        </script>
